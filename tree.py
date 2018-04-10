@@ -54,7 +54,7 @@ class Person:
             return None
 
         for i in range(len(p.parent.children)):
-            if p.parent.children[i].name != p.name and p.parent.children[i].name not in list:
+            if p.parent.children[i].name != p.name:
                 list.append(p.parent.children[i].name)
         return list
 
