@@ -56,6 +56,8 @@ class Person:
         return list
 
     def getParents(self, name):
+        if (self.findPerson(name).parent) is None:
+            return None
         list = []
         list.append(self.findPerson(name).parent.name)
         list.append(self.findPerson(name).parent.spouse)

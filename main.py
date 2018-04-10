@@ -1,5 +1,5 @@
-from graphviz import Digraph
 from txt_reader import text_reader
+from visualize import visualizer
 import argparse
 
 
@@ -8,22 +8,21 @@ parser = argparse.ArgumentParser(
     formatter_class=argparse.RawTextHelpFormatter,
     )
 
-parser.add_argument("--visualize",
+parser.add_argument("--vis",
     help="Will display the tree",
     dest='vis')
 
 parser.add_argument("--get",
     help="Will get a desired component from a desired person",
     choices=['siblings', 'parents', 'spouse', 'children'],
-    default='parents',
     dest='get')
 
 t = text_reader('family_tree.txt')
 args = parser.parse_args()
 
-if args.vis is not None:
-    familyTree = Digraph('My Family Tree', filename='txt_reader.gv')
-    familyTree.render('Final_Project/txt_reader.gv', view=True)
+if args.vis:
+    visualizer('family_tree.txt')
+
 
 if args.get == "parents":
     ans = input("Whose Parents would you like to find? ")
@@ -50,7 +49,7 @@ if args.get == "spouse":
     if t.findPerson(ans) is None:
         print("That person isn't in the tree, sorry.")
     elif t.getSpouse(ans) is None:
-        print("This person is not married.")
+        print("This person is not married")
     else:
         print(ans, " is married to ", t.getSpouse(ans))
 
@@ -61,5 +60,5 @@ if args.get == "children":
     elif len(t.findPerson(ans).children) == 0:
         print("This person has no kids.")
     else:
-        print(ans, " has", len(t.findPerson(ans).children, "kid(s): "))
-        print(*t.findPerson.getAllChildren(ans))
+        print(ans, " has", len(t.findPerson(ans).children), "kid(s): ")
+        print(*t.getAllChildren(ans))

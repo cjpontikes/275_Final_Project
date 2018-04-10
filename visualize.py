@@ -1,11 +1,9 @@
 from graphviz import Digraph
-from txt_reader import text_reader
+# from txt_reader import text_reader
 
-tree = text_reader("family_tree.txt")
-familyTree = Digraph('My Family Tree', filename='visualize.gv')
-
-
+# tree = text_reader("family_tree.txt")
 def visualizer(filename):
+    familyTree = Digraph('My Family Tree', filename='visualize.gv')
     with open(filename, 'r') as txtfile:
         lines = sorted(txtfile.readlines())
         # print(lines)
@@ -22,8 +20,10 @@ def visualizer(filename):
                 # print("make connection")
                 familyTree.edge(text[2], text[1])
 
+    familyTree.render('Final_Project/visualize.gv', view=True)
 
-visualizer('family_tree.txt')
-print(familyTree.source)
+    
+#visualizer('family_tree.txt')
+#print(familyTree.source)
 
-familyTree.render('Final_Project/visualize.gv', view=True)
+#familyTree.render('Final_Project/visualize.gv', view=True)
