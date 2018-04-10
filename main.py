@@ -38,6 +38,8 @@ if args.get == "siblings":
     ans = input("Whose siblings would you like to find? ")
     if t.findPerson(ans) is None:
         print("That person isn't in the tree, sorry.")
+    elif t.getSiblings(ans) is None:
+        print("This person's siblings are not in the tree.")
     elif len(t.getSiblings(ans)) == 0:
         print("This person is an only child")
     else:

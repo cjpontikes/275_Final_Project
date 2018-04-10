@@ -50,13 +50,16 @@ class Person:
         # get all the siblings of a specific person
         list = []
         p = self.findPerson(name)
+        if p.parent == "None":
+            return None
+
         for i in range(len(p.parent.children)):
             if p.parent.children[i].name != p.name and p.parent.children[i].name not in list:
                 list.append(p.parent.children[i].name)
         return list
 
     def getParents(self, name):
-        if (self.findPerson(name).parent) is None:
+        if (self.findPerson(name).parent) == "None":
             return None
         list = []
         list.append(self.findPerson(name).parent.name)
