@@ -15,6 +15,7 @@ def text_reader(filename):
                 break
             if text[3] == 'M':
                 p.findPerson(text[2].strip()).addChildren(text[1].strip(), text[4].strip())
-            p.findPerson(text[2].strip()).addChildren(text[1].strip(), None)  # add children to the new 'root'
+            else:
+                p.findPerson(text[2].strip()).addChildren(text[1].strip(), None)  # add children to the new 'root'
 
     return p
