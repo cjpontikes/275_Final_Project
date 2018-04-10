@@ -26,9 +26,9 @@ if args.vis:
 
 if args.get == "parents":
     ans = input("Whose Parents would you like to find? ")
-    if t.findPerson(ans) is None:
-        print("That person isn't in the tree, sorry.")
-    elif t.getParents(ans) is None:
+    while t.findPerson(ans) is None:
+        ans = input("That person isn't in the tree, sorry. Try again: ")
+    if t.getParents(ans) is None:
         print("This person's Parents are not in the tree.")
     else:
         print("The parents of ", ans, "are ")
@@ -36,9 +36,9 @@ if args.get == "parents":
 
 if args.get == "siblings":
     ans = input("Whose siblings would you like to find? ")
-    if t.findPerson(ans) is None:
-        print("That person isn't in the tree, sorry.")
-    elif t.getSiblings(ans) is None:
+    while t.findPerson(ans) is None:
+        ans = input("That person isn't in the tree, sorry. Try agian: ")
+    if t.getSiblings(ans) is None:
         print("This person's siblings are not in the tree.")
     elif len(t.getSiblings(ans)) == 0:
         print("This person is an only child")
@@ -48,18 +48,18 @@ if args.get == "siblings":
 
 if args.get == "spouse":
     ans = input("Whose spouse would you like to find? ")
-    if t.findPerson(ans) is None:
-        print("That person isn't in the tree, sorry.")
-    elif t.getSpouse(ans) is None:
+    while t.findPerson(ans) is None:
+        ans = input("That person isn't in the tree, sorry. Try again: ")
+    if t.getSpouse(ans) is None:
         print("This person is not married")
     else:
         print(ans, " is married to ", t.getSpouse(ans))
 
 if args.get == "children":
     ans = input("Whose children would you like to find? ")
-    if t.findPerson(ans) is None:
-        print("That person isn't in the tree, sorry.")
-    elif len(t.findPerson(ans).children) == 0:
+    while t.findPerson(ans) is None:
+        ans = input("That person isn't in the tree, sorry. Try again: ")
+    if len(t.findPerson(ans).children) == 0:
         print("This person has no kids.")
     else:
         print(ans, " has", len(t.findPerson(ans).children), "kid(s): ")
