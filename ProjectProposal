@@ -1,0 +1,47 @@
+CMPUT 275
+FINAL PROJECT PROPOSAL
+Chris Pontikes (1499276) and Brighton Greet (1494333)
+
+Idea: Family Tree Generator
+
+Take in a text file with a specified format to create a family tree out of.
+The names of the people listed in the text file will certain flags to tell the
+text-reading function information for sorting. The format will be:
+
+V Generation_number firstname_lastname
+
+E firstname_lastname(start) firstname_lastname(finish)
+
+From this text file, we will be able to build a family tree of the given family using
+a non-binary tree. V and E will be flags to declare if it is a node or a path.
+
+Generation_number will tell us where in the tree each person goes (1 will go at the top of the tree,
+the nth generation will be at the bottom of the tree)
+Example:
+
+V 2 John_Pontikes
+V 3 Peter_Pontikes
+E John_Pontikes Peter_Pontikes
+
+will create a node for John and a node for Peter and the two will be connected
+
+
+The family tree will be displayed via visualize.py
+
+Other functions that can be included could be typing in a family member's name and outputting the
+number of children they have
+
+Another function included could be inputting a person's name and outputting their siblings or parents
+
+
+Milestones:
+
+Formatting the txt file
+
+Reading in the txt file
+
+Interpreting the txt file and building a tree
+
+Displaying the tree
+
+Functions added on

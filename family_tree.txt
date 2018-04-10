@@ -1,0 +1,31 @@
+0,Panagiotis Pontikes,None,M,Maria Kokkinias
+1,John Pontikes,Panagiotis Pontikes,M,Helen Kambylafkas
+1,Irene Konstantopoulos,Panagiotis Pontikes,M,George Konstantopoulos
+1,Anastasia Spantidos,Panagiotis Pontikes,M,Gus Spantidos
+1,Sophia Vlassopoulos,Panagiotis Pontikes,M,Jerry Vlassopoulos
+1,Kiki Kefalonitis,Panagiotis Pontikes,M,George Kefalonitis
+1,Nitsa Anastopoulos,Panagiotis Pontikes,M,Andrea Anastopoulos
+2,Maria Wysocki,Irene Konstantopoulos,M,Jack Wysocki
+2,Pat Fecke,Irene Konstantopoulos,M,Peter Fecke
+2,Susana Helmak,Sophia Vlassopoulos,M,Mark Helmak
+2,Peter Pontikes,John Pontikes,M,Heather Nadeau
+2,Maria Sinding,John Pontikes,M,Bruce Sinding
+2,Maria Chalkias,Nitsa Anastopoulos,M,Milton Chalkias
+2,Dina Anastopoulos,Nitsa Anastopoulos,None,None
+2,Irene Griatsiotis,Nitsa Anastopoulos,M,Gus Griatsiotis
+2,Ted Anastopoulos,Nitsa Anastopoulos,M,Tanya Smythe
+3,Malaina Wysocki,Maria Wysocki,None,None
+3,Stephanie Fecke,Pat Fecke,None,None
+3,Derek Fecke,Pat Fecke,None,None
+3,Elizabeth Helmak,Susana Helmak,None,None
+3,Christopher Pontikes,Peter Pontikes,None,None
+3,Nicole Pontikes,Peter Pontikes,None,None
+3,Kristiana Sinding,Maria Sinding,None,None
+3,Emily Sinding,Maria Sinding,None,None
+3,Andrew Sinding,Maria Sinding,None,None
+3,Kristy Griatsiotis,Irene Griatsiotis,None,None
+3,Stacy Griatsiotis,Irene Griatsiotis,None,None
+3,Stephanie Griatsiotis,Irene Griatsiotis,None,None
+3,Peter Griatsiotis,Irene Griatsiotis,None,None
+3,Michael Griatsiotis,Irene Griatsiotis,None,None
+3,Andreas Anastopoulos,Ted Anastopoulos,None,None
