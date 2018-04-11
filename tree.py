@@ -79,5 +79,7 @@ class Person:
             if p.parent.name == grandparent.children[i].name:
                 continue
             else:
-                list.append(grandparent.children[i].getAllChildren(grandparent.children[i].name))
+                for x in range(len(grandparent.children[i].children)):
+                    list.append(grandparent.children[i].getChild(x).name)
+
         return list
