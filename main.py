@@ -31,8 +31,8 @@ if args.get == "parents":
     if t.getParents(ans) is None:
         print("This person's Parents are not in the tree.")
     else:
-        print("The parents of ", ans, "are ")
-        print(*t.getParents(ans))
+        print("The parents of ", ans, "are: ")
+        print(", ".join(t.getParents(ans)))
 
 if args.get == "siblings":
     ans = input("Whose siblings would you like to find? ")
@@ -44,7 +44,7 @@ if args.get == "siblings":
         print("This person is an only child")
     else:
         print(ans, "has ", len(t.getSiblings(ans)), " sibling(s): ")
-        print(*t.getSiblings(ans))
+        print(", ".join(t.getSiblings(ans)))
 
 if args.get == "spouse":
     ans = input("Whose spouse would you like to find? ")
@@ -63,7 +63,7 @@ if args.get == "children":
         print("This person has no kids.")
     else:
         print(ans, " has", len(t.findPerson(ans).children), "kid(s): ")
-        print(*t.getAllChildren(ans))
+        print(", ".join(t.getAllChildren(ans)))
 
 if args.get == 'cousins':
     ans = input("Whose cousins would you like to find? ")
@@ -75,4 +75,4 @@ if args.get == 'cousins':
         print("This person has no first cousins.")
     else:
         print(ans, " has", len(t.getFirstCousins(ans)), "first cousin(s): ")
-        print(*t.getFirstCousins(ans))
+        print(", ".join(t.getFirstCousins(ans)))
