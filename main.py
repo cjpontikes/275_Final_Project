@@ -69,7 +69,9 @@ if args.get == 'cousins':
     ans = input("Whose cousins would you like to find? ")
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try again: ")
-    if len(t.getFirstCousins(ans)) == 0:
+    if t.getFirstCousins(ans) is None:
+        print("This person's first cousins cannot be found in the tree.")
+    elif len(t.getFirstCousins(ans)) == 0:
         print("This person has no first cousins.")
     else:
         print(ans, " has cousin(s): ")
