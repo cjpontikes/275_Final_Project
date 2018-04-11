@@ -14,7 +14,7 @@ parser.add_argument("--vis",
 
 parser.add_argument("--get",
     help="Will get a desired component from a desired person",
-    choices=['siblings', 'parents', 'spouse', 'children'],
+    choices=['siblings', 'parents', 'spouse', 'children', 'cousins'],
     dest='get')
 
 t = text_reader('family_tree.txt')
@@ -64,3 +64,13 @@ if args.get == "children":
     else:
         print(ans, " has", len(t.findPerson(ans).children), "kid(s): ")
         print(*t.getAllChildren(ans))
+
+if args.get == 'cousins':
+    ans = input("Whose cousins would you like to find? ")
+    while t.findPerson(ans) is None:
+        ans = input("That person isn't in the tree, sorry. Try again: ")
+    if len(t.getFirstCousins(ans)) == 0:
+        print("This person has no first cousins.")
+    else:
+        print(ans, " has cousin(s): ")
+        print(*t.getFirstCousins(ans))
