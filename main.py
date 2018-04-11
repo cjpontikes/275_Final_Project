@@ -74,5 +74,5 @@ if args.get == 'cousins':
     elif len(t.getFirstCousins(ans)) == 0:
         print("This person has no first cousins.")
     else:
-        print(ans, " has cousin(s): ")
+        print(ans, " has", len(t.getFirstCousins(ans)), "first cousin(s): ")
         print(*t.getFirstCousins(ans))
