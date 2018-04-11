@@ -68,3 +68,16 @@ class Person:
 
     def getSpouse(self, name):
         return self.findPerson(name).spouse
+
+    def getFirstCousins(self, name):
+        list = []
+        p = self.findPerson(name)
+        if p.parent == "None" or p.parent.parent == "None":
+            return None
+        grandparent = p.parent.parent
+        for i in range(len(grandparent.children)):
+            if p.parent.name == grandparent.children[i].name:
+                continue
+            else:
+                list.append(grandparent.children[i].getAllChildren(grandparent.children[i].name))
+        return list
