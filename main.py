@@ -29,7 +29,7 @@ if args.get == "parents":
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try again: ")
     if t.getParents(ans) is None:
-        print("This person's Parents are not in the tree.")
+        print(ans, "has no parents in the tree.")
     else:
         print("The parents of ", ans, "are: ")
         print(", ".join(t.getParents(ans)))
@@ -39,9 +39,9 @@ if args.get == "siblings":
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try agian: ")
     if t.getSiblings(ans) is None:
-        print("This person's siblings are not in the tree.")
+        print(ans,"has no siblings in the tree.")
     elif len(t.getSiblings(ans)) == 0:
-        print("This person is an only child")
+        print(ans, "is an only child")
     else:
         print(ans, "has ", len(t.getSiblings(ans)), " sibling(s): ")
         print(", ".join(t.getSiblings(ans)))
@@ -51,7 +51,7 @@ if args.get == "spouse":
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try again: ")
     if t.getSpouse(ans) is None:
-        print("This person is not married")
+        print(ans," is not married")
     else:
         print(ans, " is married to ", t.getSpouse(ans))
 
@@ -60,7 +60,7 @@ if args.get == "children":
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try again: ")
     if len(t.findPerson(ans).children) == 0:
-        print("This person has no kids.")
+        print(ans, " has no kids.")
     else:
         print(ans, " has", len(t.findPerson(ans).children), "kid(s): ")
         print(", ".join(t.getAllChildren(ans)))
@@ -70,9 +70,9 @@ if args.get == 'cousins':
     while t.findPerson(ans) is None:
         ans = input("That person isn't in the tree, sorry. Try again: ")
     if t.getFirstCousins(ans) is None:
-        print("This person's first cousins cannot be found in the tree.")
+        print(ans, "has no first cousins in the tree.")
     elif len(t.getFirstCousins(ans)) == 0:
-        print("This person has no first cousins.")
+        print(ans, "has no first cousins.")
     else:
         print(ans, " has", len(t.getFirstCousins(ans)), "first cousin(s): ")
         print(", ".join(t.getFirstCousins(ans)))
