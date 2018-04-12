@@ -6,17 +6,23 @@ def visualizer(filename):
     with open(filename, 'r') as txtfile:
         lines = sorted(txtfile.readlines())
         # print(lines)
+        dictionary = dict()
         for line in lines:
             text = line.split(",")
             familyTree.attr('node', shape='box', color='blue')
+            childname = text[1]
+            parentname = text[2]
             if text[2] == "None":
-                familyTree.node(text[1].strip())
+                dictionary[text[1].strip()] = text[1].strip() + "\nMarried to " + text[4].strip()
+                # familyTree.node(text[1].strip())
                 continue
-            if text[3] == 'M':
-                familyTree.node(text[1].strip(), xlabel="Married To " + text[4])
-            familyTree.node(text[1].strip(), text[1].strip())
-            if text[2] is not None:
-                # print("make connection")
-                familyTree.edge(text[2], text[1])
+
+            else:
+                if text[3] == 'M':
+                    childname += "\nMarried to " + text[4].strip()
+
+                dictionary[text[1].strip()] = childname
+                # print(childName)
+                familyTree.edge(dictionary[parentname], childname)
 
     familyTree.render('Final_Project/visualize.gv', view=True)

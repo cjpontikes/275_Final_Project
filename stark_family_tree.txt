@@ -1,8 +1,8 @@
 0,Benjen Stark I,None,M,Lysa Locke
-1,Rickon Stark I, Benjen Stark I,M,Gillian Glover
+1,Rickon Stark I,Benjen Stark I,M,Gillian Glover
 1,Bennard Stark,Benjen Stark I,M,Margaret Karstark
 2,Benjen Stark II,Bennard Stark,None,None
-2,Brandon Stark I,Benjen Stark I,None, None
+2,Brandon Stark I,Benjen Stark I,None,None
 2,Elric Stark,Benjen Stark I,None,None
 2,Cregan Stark I,Rickon Stark I,M,Lynara Stark
 2,Arra Norrey,Rickon Stark I,None,None
@@ -10,11 +10,11 @@
 3,Jonnel Stark,Cregan Stark I,M,Robyn Ryswell
 3,Edric Stark,Cregan Stark I,None,None
 3,Lyanna Stark I,Cregan Stark I,None,None
-3,Barthogan Stark,Cregen Stark I,None,None
+3,Barthogan Stark,Cregan Stark I,None,None
 3,Brandon Stark II,Cregan Stark I,M,Alys Karstark
 4,Rodwell Stark,Brandon Stark II,M,Myriame Manderly
 4,Beron Stark,Brandon Stark II,M,Lorra Royce
-4,Arsa Stark,Branddon Stark II,None,None
+4,Arsa Stark,Brandon Stark II,None,None
 5,Donnor Stark,Beron Stark,None,None
 5,Willam Stark,Beron Stark,M,Melantha Blackwood
 5,Artos Stark,Beron Stark,M,Lysara Karstark
@@ -37,4 +37,4 @@
 9,Sansa Stark,Eddard Stark,M,Tyrion Lannister
 9,Arya Stark,Eddard Stark,None,None
 9,Bran Stark,Eddard Stark,None,None
-9,Rickon Stark III, Eddard Stark,None,None
+9,Rickon Stark III,Eddard Stark,None,None
