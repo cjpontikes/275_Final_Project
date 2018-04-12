@@ -5,7 +5,6 @@ def visualizer(filename):
     familyTree = Digraph('My Family Tree', filename='visualize.gv')
     with open(filename, 'r') as txtfile:
         lines = sorted(txtfile.readlines())
-        # print(lines)
         dictionary = dict()
         for line in lines:
             text = line.split(",")
@@ -14,15 +13,12 @@ def visualizer(filename):
             parentname = text[2]
             if text[2] == "None":
                 dictionary[text[1].strip()] = text[1].strip() + "\nMarried to " + text[4].strip()
-                # familyTree.node(text[1].strip())
                 continue
-
             else:
                 if text[3] == 'M':
                     childname += "\nMarried to " + text[4].strip()
 
                 dictionary[text[1].strip()] = childname
-                # print(childName)
                 familyTree.edge(dictionary[parentname], childname)
 
     familyTree.render('Final_Project/visualize.gv', view=True)
