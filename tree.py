@@ -69,7 +69,7 @@ class Person:
     def getSpouse(self, name):
         return self.findPerson(name).spouse
 
-    def getFirstCousins(self, name):
+    def getFirstCousins(self, name): 
         list = []
         p = self.findPerson(name)
         if p.parent == "None" or p.parent.parent == "None":

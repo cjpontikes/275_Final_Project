@@ -17,11 +17,11 @@ parser.add_argument("--get",
     choices=['siblings', 'parents', 'spouse', 'children', 'cousins'],
     dest='get')
 
-t = text_reader('family_tree.txt')
+t = text_reader('stark_family_tree.txt')
 args = parser.parse_args()
 
 if args.vis:
-    visualizer('family_tree.txt')
+    visualizer('stark_family_tree.txt')
 
 
 if args.get == "parents":

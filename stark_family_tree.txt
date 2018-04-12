@@ -1,0 +1,40 @@
+0,Benjen Stark I,None,M,Lysa Locke
+1,Rickon Stark I, Benjen Stark I,M,Gillian Glover
+1,Bennard Stark,Benjen Stark I,M,Margaret Karstark
+2,Benjen Stark II,Bennard Stark,None,None
+2,Brandon Stark I,Benjen Stark I,None, None
+2,Elric Stark,Benjen Stark I,None,None
+2,Cregan Stark I,Rickon Stark I,M,Lynara Stark
+2,Arra Norrey,Rickon Stark I,None,None
+2,Rickon Stark II,Rickon Stark I,M,Jayne Manderly
+3,Jonnel Stark,Cregan Stark I,M,Robyn Ryswell
+3,Edric Stark,Cregan Stark I,None,None
+3,Lyanna Stark I,Cregan Stark I,None,None
+3,Barthogan Stark,Cregen Stark I,None,None
+3,Brandon Stark II,Cregan Stark I,M,Alys Karstark
+4,Rodwell Stark,Brandon Stark II,M,Myriame Manderly
+4,Beron Stark,Brandon Stark II,M,Lorra Royce
+4,Arsa Stark,Branddon Stark II,None,None
+5,Donnor Stark,Beron Stark,None,None
+5,Willam Stark,Beron Stark,M,Melantha Blackwood
+5,Artos Stark,Beron Stark,M,Lysara Karstark
+5,Berena Stark,Beron Stark,None,None
+5,Alysanne Stark,Beron Stark,None,None
+5,Errold Stark,Beron Stark,None,None
+5,Rodrik Stark,Beron Stark,M,Arya Flint
+6,Jocyln Stark,Willam Stark,M,Benedict Royce
+6,Edwyle Stark,Willam Stark,M,Marna Locke
+6,Brandon Stark III,Artos Stark,None,None
+6,Benjen Stark III,Artos Stark,None,None
+6,Branda Stark,Rodrik Stark,M,Harold Rogers
+6,Lyarra Stark,Rodrik Stark,M,Rickard Stark
+7,Rickard Stark,Edwyle Stark,M,Lyarra Stark
+8,Brandon Stark IV,Rickard Stark,None,None
+8,Eddard Stark,Rickard Stark,M,Catelyn Tully
+8,Lyanna Stark II,Rickard Stark,None,None
+8,Benjen Stark IV,Rickard Stark,None,None
+9,Robb Stark,Eddard Stark,M,Jeyne Westerling
+9,Sansa Stark,Eddard Stark,M,Tyrion Lannister
+9,Arya Stark,Eddard Stark,None,None
+9,Bran Stark,Eddard Stark,None,None
+9,Rickon Stark III, Eddard Stark,None,None
